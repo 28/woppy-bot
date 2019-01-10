@@ -1,1 +1,3 @@
-# Woopy the Weather Bot
+# Woppy the Weather Bot
+
+# License

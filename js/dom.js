@@ -14,7 +14,7 @@ function activate() {
             $.when(dataProvider).done(function () {
                 let data = dataProvider.responseJSON;
                 if (data.query.results === null) {
-                    alert("Location not found: " + location + "!");
+                    alert("Location not found: " + zipCode + "!");
                 } else {
                     $('#weather-info-container').html('<h2>' + data.query.results.channel.item.title + '</h2>' + extractCData(data.query.results.channel.item.description));
                     running = false;
