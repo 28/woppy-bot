@@ -2,11 +2,8 @@
 <html lang="en">
 <head>
     <title>Woppy the Weather Bot</title>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,26 +19,39 @@
                 </button>
             </div>
             <div class="row pt-5 justify-content-center">
-                <span id="activated-label" style="display: none; font-size: 120%;"></span>
+                <h4><span id="activated-label" style="display: none; font-size: 120%;"></span></h4>
             </div>
-            <div id="zip-code-container" class="row pt-5 justify-content-center">
-                <p></p>
+            <div id="zip-code-container" class="row pt-1 justify-content-center">
+                <h2></h2>
             </div>
         </div>
     </div>
+    <div class="row pt-2">
+        <div class="col text-left">
+            <span>2019</span>
+        </div>
+    </div>
 </div>
-<div class="container text-center pt-5">
-    <div id="weather-info-container" class="col-sm" style="display: none;">
-        <span class="row" id="city-info"></span>
-        <span class="row" id="time-info"></span>
-        <img class="row" id="icon" src="#" alt=""/>
-        <span class="row" id="temp-info"></span>
-        <span class="row" id="press-info"></span>
-        <span class="row" id="hum-info"></span>
+<div id="weather-info-container" class="container pt-4" style="display: none;">
+    <div class="row">
+        <div class="col text-center">
+            <h2><span id="city-info" class="label label-default"></span></h2>
+            <h4><span id="time-info" class="label label-default"></span></h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col text-left">
+            <h2><span id="temp-info" class="label label-default"></span></h2>
+            <h4><span id="press-info" class="label label-default"></span></h4>
+            <h4><span id="hum-info" class="label label-default"></span></h4>
+        </div>
+        <div class="col text-right">
+            <h2><img id="icon" src="#" alt="" class="img-responsive"/></h2>
+            <h4><span id="desc-info" class="label label-default"></span></h4>
+        </div>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="js/dom.js"></script>
 </body>
