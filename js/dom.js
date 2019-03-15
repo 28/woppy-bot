@@ -78,11 +78,12 @@ function capitalize(string) {
 }
 
 function displayWeather(data) {
-    $('#city-info').text(data.name + ", " + data.stateCode);
-    $('#time-info').text(new Date(data.dt).toDateString());
+    $('#city-info').text(data.name + ", " + data.state + ", " + data.stateCode);
+    $('#time-info').text("as of " + new Date(data.dt * 1000).toLocaleString());
     $('#icon').attr("src", data.weather[0].icon);
     $('#desc-info').text(capitalize(data.weather[0].description));
     $('#temp-info').text(data.main.temp + " °F");
+    $('#hilo-info').text(data.main.temp_max + "-" + data.main.temp_min + " °F");
     $('#press-info').text(data.main.pressure + " hPa");
     $('#hum-info').text(data.main.humidity + " %");
     $('#weather-info-container').show();

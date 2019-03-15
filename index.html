@@ -15,40 +15,41 @@
                 <img src="img/woppy.jpg" alt="woppy-bot"/>
             </div>
             <div class="row">
-                <small>&copy; 2019 <a href="http://theparanoidtimes.org">theparanoidtimes</a></small>
+                <small>v0.1 &copy; 2019 <a href="http://theparanoidtimes.org">theparanoidtimes</a></small>
             </div>
         </div>
         <div class="col text-center">
-            <div class="row justify-content-center">
-                <button id="activate-button" name="activate-button" type="button" class="btn btn-success" onclick="activate()">
+            <div class="row justify-content-center pt-3">
+                <button id="activate-button" name="activate-button" type="button" class="btn-lg btn-success" onclick="activate()">
                     Activate!
                 </button>
             </div>
             <div class="row pt-5 justify-content-center">
-                <h4><span id="activated-label" style="display: none; font-size: 120%;"></span></h4>
+                <h4><span id="activated-label" class="text-secondary" style="display: none; font-size: 120%;"></span></h4>
             </div>
-            <div id="zip-code-container" class="row pt-1 justify-content-center">
+            <div id="zip-code-container" class="row pt-1 justify-content-center text-primary">
                 <h2></h2>
             </div>
         </div>
     </div>
 </div>
-<div id="weather-info-container" class="container pt-4" style="display: none;">
+<div id="weather-info-container" class="container" style="display: none;">
     <div class="row">
         <div class="col text-center">
-            <h2><span id="city-info" class="label label-default"></span></h2>
-            <h4><span id="time-info" class="label label-default"></span></h4>
+            <h1><span id="city-info" class="label label-default text-lg-center text-primary"></span></h1>
+            <h3><span id="time-info" class="label label-default"></span></h3>
         </div>
     </div>
     <div class="row">
         <div class="col text-left">
-            <h2><span id="temp-info" class="label label-default"></span></h2>
-            <h4><span id="press-info" class="label label-default"></span></h4>
-            <h4><span id="hum-info" class="label label-default"></span></h4>
+            <h1><span id="temp-info" class="label label-default text-primary"></span></h1>
+            <h3><span class="label label-default">Hi-Lo: </span><span id="hilo-info" class="label label-default text-primary"></span></h3>
+            <h3><span class="label label-default">Pressure: </span><span id="press-info" class="label label-default text-primary"></span></h3>
+            <h3><span class="label label-default">Humidity: </span><span id="hum-info" class="label label-default text-primary"></span></h3>
         </div>
         <div class="col text-right">
-            <h2><img id="icon" src="#" alt="" class="img-responsive"/></h2>
-            <h4><span id="desc-info" class="label label-default"></span></h4>
+            <h1><img id="icon" src="#" alt="" class="img-responsive"/></h1>
+            <h3><span id="desc-info" class="label label-default text-primary"></span></h3>
         </div>
     </div>
 </div>
