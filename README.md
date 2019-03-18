@@ -15,9 +15,9 @@ Sometimes Woppy can be a little slow while activating, so be patient.
 
 # ToDo
 
-- [] UV index
-- [] Wind
-- [] Extended forecast
+- [ ] UV index
+- [ ] Wind
+- [ ] Extended forecast
 
 # License
 
