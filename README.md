@@ -2,13 +2,22 @@
 
 Woppy the weather bot - tells weather info for a random city.
 
-Everything is explained [here](https://www.youtube.com/user/Coxncrendorpodcast).  
+Current version: 0.1.  
+Everything will be explained [here](https://www.youtube.com/user/Coxncrendorpodcast).  
 Woppy image taken from [here](https://coxncrendor.fandom.com/wiki/Woppy_the_Weatherbot).  
 Weather data provided by [OpenWeatherMap](https://openweathermap.org).  
 
 # Usage
 
 Just hit it!
+
+Sometimes Woppy can be a little slow while activating, so be patient.
+
+# ToDo
+
+- [] UV index
+- [] Wind
+- [] Extended forecast
 
 # License
 
