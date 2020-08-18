@@ -16,7 +16,7 @@
                 <img src="img/woppy.jpg" alt="woppy-bot"/>
             </div>
             <div class="row" style="font-size: 70%;">
-                <p>woppy-bot&nbsp;v0.1<br/>&copy;&nbsp;2019&nbsp;<a href="https://theparanoidtimes.org">theparanoidtimes.org</a>&nbsp;All&nbsp;rights&nbsp;reserved</p>
+                <p>woppy-bot&nbsp;v0.1<br/>&copy;&nbsp;<span id="cr-years"></span>&nbsp;<a href="https://theparanoidtimes.org">theparanoidtimes.org</a><br/>All&nbsp;rights&nbsp;reserved</p>
             </div>
         </div>
         <div class="col text-center">
@@ -57,5 +57,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <script src="js/dom.js"></script>
+<script type="text/javascript">
+    $(window).on('load', function() {
+        $('#cr-years').text("2019-" + (new Date()).getFullYear());
+    });
+</script>
 </body>
 </html>
